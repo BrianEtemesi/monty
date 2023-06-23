@@ -94,7 +94,7 @@ void (*get_opcodes(char *opc))(stack_t **stack, unsigned int line_number);
 int _sch(char *s, char c);
 char *_strtoky(char *s, char *d);
 void *_realloc(void *ptr, unsigned int old_size, unsigned int new_size);
-void *_calloc(unsigned int nmemb, unsigned int size);
+void *_calloc(unsigned int n_elements, unsigned int size);
 int _strcmp(char *s1, char *s2);
 
 /* doubly linked list functions */

@@ -5,8 +5,8 @@
  *
  * @doubly: head of the linked list
  * @cline: line number;
- * Return: no return
  */
+
 void _queue(stack_t **doubly, unsigned int cline)
 {
 	(void)doubly;
@@ -20,8 +20,8 @@ void _queue(stack_t **doubly, unsigned int cline)
  *
  * @doubly: head of the linked list
  * @cline: line number;
- * Return: no return
  */
+
 void _stack(stack_t **doubly, unsigned int cline)
 {
 	(void)doubly;
@@ -35,8 +35,8 @@ void _stack(stack_t **doubly, unsigned int cline)
  *
  * @doubly: head of the linked list
  * @cline: line number;
- * Return: no return
  */
+
 void _add(stack_t **doubly, unsigned int cline)
 {
 	int m = 0;
@@ -64,8 +64,8 @@ void _add(stack_t **doubly, unsigned int cline)
  *
  * @doubly: head of the linked list
  * @cline: line number;
- * Return: no return
  */
+
 void _nop(stack_t **doubly, unsigned int cline)
 {
 	(void)doubly;
@@ -77,8 +77,8 @@ void _nop(stack_t **doubly, unsigned int cline)
  *
  * @doubly: head of the linked list
  * @cline: line number;
- * Return: no return
  */
+
 void _sub(stack_t **doubly, unsigned int cline)
 {
 	int m = 0;

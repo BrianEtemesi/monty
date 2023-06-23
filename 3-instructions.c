@@ -5,8 +5,8 @@
  *
  * @doubly: head of the linked list
  * @cline: line number;
- * Return: no return
  */
+
 void _rotl(stack_t **doubly, unsigned int cline)
 {
 	stack_t *aux1 = NULL;
@@ -37,8 +37,8 @@ void _rotl(stack_t **doubly, unsigned int cline)
  *
  * @doubly: head of the linked list
  * @cline: line number
- * Return: no return
  */
+
 void _rotr(stack_t **doubly, unsigned int cline)
 {
 	stack_t *aux = NULL;

@@ -5,8 +5,8 @@
  *
  * @doubly: head of the linked list
  * @cline: line number;
- * Return: no return
  */
+
 void _div(stack_t **doubly, unsigned int cline)
 {
 	int m = 0;
@@ -41,8 +41,8 @@ void _div(stack_t **doubly, unsigned int cline)
  *
  * @doubly: head of the linked list
  * @cline: line number;
- * Return: no return
  */
+
 void _mul(stack_t **doubly, unsigned int cline)
 {
 	int m = 0;
@@ -71,8 +71,8 @@ void _mul(stack_t **doubly, unsigned int cline)
  *
  * @doubly: head of the linked list
  * @cline: line number;
- * Return: no return
  */
+
 void _mod(stack_t **doubly, unsigned int cline)
 {
 	int m = 0;
@@ -106,8 +106,8 @@ void _mod(stack_t **doubly, unsigned int cline)
  *
  * @doubly: head of the linked list
  * @cline: line number;
- * Return: no return
  */
+
 void _pchar(stack_t **doubly, unsigned int cline)
 {
 	if (doubly == NULL || *doubly == NULL)
@@ -130,8 +130,8 @@ void _pchar(stack_t **doubly, unsigned int cline)
  *
  * @doubly: head of the linked list
  * @cline: line number;
- * Return: no return
  */
+
 void _pstr(stack_t **doubly, unsigned int cline)
 {
 	stack_t *aux;
