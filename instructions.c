@@ -1,4 +1,5 @@
 #include "monty.h"
+#include <stdarg.h>
 
 /**
  * _push - pushes an element to the stack
@@ -11,28 +12,28 @@ void _push(stack_t **doubly, unsigned int cline)
 {
 	int n, j;
 
-	if (!vglo.arg)
+	if (!glov.arg)
 	{
 		dprintf(2, "L%u: ", cline);
 		dprintf(2, "usage: push integer\n");
-		free_vglo();
+		free_glov();
 		exit(EXIT_FAILURE);
 	}
 
-	for (j = 0; vglo.arg[j] != '\0'; j++)
+	for (j = 0; glov.arg[j] != '\0'; j++)
 	{
-		if (!isdigit(vglo.arg[j]) && vglo.arg[j] != '-')
+		if (!isdigit(glov.arg[j]) && glov.arg[j] != '-')
 		{
 			dprintf(2, "L%u: ", cline);
 			dprintf(2, "usage: push integer\n");
-			free_vglo();
+			free_glov();
 			exit(EXIT_FAILURE);
 		}
 	}
 
-	n = atoi(vglo.arg);
+	n = atoi(glov.arg);
 
-	if (vglo.lifo == 1)
+	if (glov.lifo == 1)
 		add_dnodeint(doubly, n);
 	else
 		add_dnodeint_end(doubly, n);
@@ -74,7 +75,7 @@ void _pint(stack_t **doubly, unsigned int cline)
 	{
 		dprintf(2, "L%u: ", cline);
 		dprintf(2, "can't pint, stack empty\n");
-		free_vglo();
+		free_glov();
 		exit(EXIT_FAILURE);
 	}
 
@@ -95,7 +96,7 @@ void _pop(stack_t **doubly, unsigned int cline)
 	if (doubly == NULL || *doubly == NULL)
 	{
 		dprintf(2, "L%u: can't pop an empty stack\n", cline);
-		free_vglo();
+		free_glov();
 		exit(EXIT_FAILURE);
 	}
 	aux = *doubly;
@@ -123,7 +124,7 @@ void _swap(stack_t **doubly, unsigned int cline)
 	if (m < 2)
 	{
 		dprintf(2, "L%u: can't swap, stack too short\n", cline);
-		free_vglo();
+		free_glov();
 		exit(EXIT_FAILURE);
 	}
 
